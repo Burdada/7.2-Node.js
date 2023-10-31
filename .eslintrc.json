@@ -1,0 +1,28 @@
+{
+    "env": {
+        "node": true,
+        "es2020": true
+    },
+    "extends": ["eslint:recommended", "prettier"],
+    "overrides": [],
+    "parserOptions": {
+        "ecmaVersion": 10,
+        "sourceType": "module"
+    },
+    "globals": {
+        "AggregateError": "readonly",
+        "FinalizationRegistry": "readonly",
+        "WeakRef": "readonly"
+    },
+    "rules": {
+        "no-var": "error",
+        "semi": "error",
+        "indent": "error",
+        "no-multi-spaces": "error",
+        "space-in-parens": "error",
+        "no-multiple-empty-lines": "error",
+        "prefer-const": "error",
+        "no-use-before-define": "error",
+        "no-nonoctal-decimal-escape": "warn"
+    }
+}
